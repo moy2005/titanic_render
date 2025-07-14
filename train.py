@@ -119,10 +119,8 @@ df.head()
 from sklearn.preprocessing import StandardScaler
 # Usar solo las columnas finales seleccionadas
 cols_selected = ['Sex_female', 'Age', 'Fare', 'Pclass', 'Cabin']
-
 scaler = StandardScaler()
 df[cols_selected] = scaler.fit_transform(df[cols_selected])
-
 df.head()
 
 #20
